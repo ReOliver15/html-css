@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        main {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*largura minima, aqui fica sem barra de rolagem em baixo*/
+            max-width: 800px; /*largura maxima da main, será 800px*/
+            margin: auto; /*a main fica centralizada*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando a Responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quod sint nobis quaerat esse sed, vero, molestiae neque repudiandae repellat animi eos unde ea nemo corporis. Ipsa ducimus rerum expedita porro aspernatur non itaque omnis impedit optio labore inventore perferendis ullam ratione, vitae temporibus officia velit unde quidem voluptate, dolores assumenda aliquam! Cum eum quod dolor minima provident explicabo ullam!</p>
+        <picture> <!--Imagem vai ficar responsiva, tenho uma normal e uma pequena-->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok"></picture>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut repellat laborum vitae voluptatum natus earum repellendus, odio dolorem eveniet officia veritatis iste fugiat consectetur est odit? Eligendi libero architecto nostrum fugit hic magnam. Possimus, velit amet. Repellat quidem id, eveniet sequi quaerat doloribus autem sunt. Nihil consectetur totam voluptatem repellat alias autem, fugiat, ea delectus sunt, veniam quae voluptates ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet inventore quisquam error voluptatem voluptates voluptate laboriosam at, doloremque, earum, quae laudantium dolor ratione ex sed. Commodi aperiam cum excepturi fugit libero voluptatem numquam est. Nulla quasi accusantium praesentium provident rem suscipit repellendus reiciendis laboriosam ad necessitatibus omnis velit nihil, iure inventore aperiam illo cumque incidunt qui optio. Rerum, eaque. Ut!</p>
+    </main>
+    
+</body>
+</html>

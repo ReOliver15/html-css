@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    
+    <!--AQUI A ORDEM IMPORTA, ORDEM DECRESCENTE-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Aúdio em HTML5</h1>
+   <!--Deu certo sim, É COMPATIVEL COM O formato MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Easton Corbin - Are You With Me (Dj Dark & Dj Vianu Remix).m4a" type="audio/mpeg">
+        <source src="midia/Easton Corbin - Are You With Me (Dj Dark & Dj Vianu Remix).ogg" type="audio/ogg">
+        <source src="midia/Easton Corbin - Are You With Me (Dj Dark & Dj Vianu Remix).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/Easton Corbin - Are You With Me (Dj Dark & Dj Vianu Remix).m4a">Clique aqui para baixar o audio</a></p>
+    </audio>
+</body>
+</html>
