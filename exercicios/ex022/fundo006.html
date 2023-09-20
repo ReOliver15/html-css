@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proximo site</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
             background-color: #E67112;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; /*melhor solução*/
-        }
+            background-position: center center; /*imagem alinhada no centro e no centro*/
+            background-repeat: no-repeat; /*imagem não se repete*/
+            background-size: cover; /*exibe totalmente a imagem na tela*/
+            background-attachment: fixed; /*Fixa a imagem de fundo na tela*/
+
+            /* Shorthan - background
+            color > image > position / repeat > size > attachment
+            */
+            /*background: #E67112 url('imagens/wallpaper002.jpg') center center / cover no-repeat fixed;*/
+            }
 
         main {
             background-color: white;
-            width: 500px; /*largura*/
+            max-width: 500px; /*largura*/
             padding: 10px;
             margin: auto;
-            border: 1px solid #2051B3;
+            border: 2px solid #2051B3;
             border-radius: 10px;
         }
     </style>
