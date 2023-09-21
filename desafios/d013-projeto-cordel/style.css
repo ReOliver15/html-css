@@ -49,8 +49,14 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em; /*espaçamento entre linhas*/
+    line-height: 3.5em; /*espaçamento entre linhas*/
     padding-left: 30px;
+}
+
+section > pre {
+    white-space: pre-line;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -60,18 +66,26 @@ section.normal {
 section.imagem {
     background-color: rgb(236, 152, 41);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-size: cover; /*cobrir a tela toda*/
+    background-attachment: fixed; /*efeito parallax na imagem*/
 }
 
 section.imagem > pre {
     display: inline-block;
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 }
 
-section > pre {
-    white-space: pre-line;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
+section#img01 {
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('./imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
