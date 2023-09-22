@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        :root {
+            --corbody: #D2B48C;
+            --cortabela: #8B4513;
+            --corbordas: #D2691E;
+            --cortext: #FFF8DC;
+            --fonte: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: var(--cortext);
+            background-color: var(--corbordas);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        body {
+            background-color:  #D2B48C;
+            font-family: var(--fonte);
+        }
+        table {
+            color: var(--cortext);
+            border-collapse: collapse; /*sempre vai aqui*/
+            background-color: var(--cortabela);
+            margin: auto;
+            text-align: center;
+            width: 600px; /*largura table*/
+            height: 600px; /*altura table*/
+        }
+        thead > tr > th {
+            border: 1px solid var(--corbordas);
+            padding: 20px;
+        }
+        td {
+            border: 1px solid var(--corbordas);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favorite Movies</h1>
+    <table>
+        <thead>
+            <tr> <!--LINHA-->
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="col">Filmes Favoritos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--LINHA-->
+                <td rowspan="3">Mulheres</td>
+                <td>Miley Jones</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatrice Amber</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Miranda Comand</td>
+                <td>Harry Potter</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Homens</td>
+                <td>Justin Levine</td>
+                <td>Avatar</td>
+                <td>Jurassic Park</td>
+                <td>Titanic</td>
+            </tr>
+            <tr>
+                <td>Noah Oliver</td>
+                <td>Narnia</td>
+                <td>Matrix 2</td>
+                <td>Poderoso Chefão</td>
+            </tr>
+            <tr>
+                <td>Jackson Lee</td>
+                <td>Star Wars</td>
+                <td>Mad Max</td>
+                <td>Gladiador</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
