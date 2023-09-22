@@ -18,6 +18,7 @@
             width: 500px; /*450 pois o 50 fica na população*/
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -35,6 +36,13 @@
             background-color: #F7395F;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky; /*cola o table head no topo*/
+            top: -1px;
+            background-color: #F7395F;
+        }
+
         tbody > tr:nth-child(odd) { /*2n-1*/
             background-color: #6ACBE6;
         }
