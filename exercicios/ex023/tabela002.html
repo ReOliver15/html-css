@@ -9,26 +9,51 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #29DCE0;
         }
+        h1 {
+            color: whitesmoke;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.445);
+            text-align: center;
+        }
         table {
-            width: 500px;
+            width: 500px; /*450 pois o 50 fica na população*/
             border-collapse: collapse;
+            margin: auto;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
-
-        thead, tfoot {
-            background-color: #E03FB0;
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #F7395F;
             color: white;
         }
+
+        thead, tfoot {
+            background-color: #F7395F;
+            color: white;
+        }
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: #6ACBE6;
+        }
+
+        tbody > tr:nth-child(even) { /*aplicado apenas nas linhas da table body*/
+            background-color: #E6607B;
+        }
+        td.num {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <!--
         Anatomia TABELAS GRANDES
-        TABLE 
+        TABLE
+        CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -37,128 +62,129 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--Titulo-->
+                <th scope="col" style="width: 50px;">População</th> <!--Titulo-->
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td>46.289.333</td>
+                <td>São Paulo</td> <!--Dado-->
+                <td class="num">46.289.333</td> <!--Dado-->
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21.292.666</td>
+                <td class="num">21.292.666</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.461.023</td>
+                <td class="num">17.461.023</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14.930.634 </td>
+                <td class="num">14.930.634 </td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11.516.840</td>
+                <td class="num">11.516.840</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>11.422.973</td>
+                <td class="num">11.422.973</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9.616.621</td>
+                <td class="num">9.616.621</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>9.187.103</td>
+                <td class="num">9.187.103</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8.690.745</td>
+                <td class="num">8.690.745</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>7.252.502</td>
+                <td class="num">7.252.502</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>7.114.598</td>
+                <td class="num">7.114.598</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>7.113.540</td>
+                <td class="num">7.113.540</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td>4.207.714</td>
+                <td class="num">4.207.714</td>
             </tr>
             <tr>
                 <td>Espirito Santo</td>
-                <td>4.064.052</td>
+                <td class="num">4.064.052</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td>4.039.277</td>
+                <td class="num">4.039.277</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td>3.534.165</td>
+                <td class="num">3.534.165</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td>3.526.220</td>
+                <td class="num">3.526.220</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td>3.351.543</td>
+                <td class="num">3.351.543</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td>3.273.227</td>
+                <td class="num">3.273.227</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td>3.055.149</td>
+                <td class="num">3.055.149</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td>2.809.394</td>
+                <td class="num">2.809.394</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
-                <td>2.318.822 </td>
+                <td class="num">2.318.822 </td>
             </tr>
             <tr>
                 <td>Rondônia</td>
-                <td> 1.796.460</td>
+                <td class="num"> 1.796.460</td>
             </tr>
             <tr>
                 <td>Tocantins</td>
-                <td>1.590.248</td>
+                <td class="num">1.590.248</td>
             </tr>
             <tr>
                 <td>Acre</td>
-                <td>894.470</td>
+                <td class="num">894.470</td>
             </tr>
             <tr>
                 <td>Amapá</td>
-                <td>861.773</td>
+                <td class="num">861.773</td>
             </tr>
             <tr>
                 <td>Roraima</td>
-                <td>631.181</td>
+                <td class="num">631.181</td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
