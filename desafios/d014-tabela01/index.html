@@ -6,21 +6,22 @@
     <title>Tabela Notas</title>
     <style>
         :root {
-            --corhead: #F2E638;
-            --corbody: #F26938;
-            --cortable: black;
-            --cortexto: #FFFFFF;
+            --corhead: #003366;
+            --cortable: #F5F5F5;
+            --corborder: #808080;
+            --cortexto: #000000;
             --fonte: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
         h1 {
             background-color: var(--corhead);
+            color: #F5F5F5;
             border-radius: 5px;
-            color: black;
             text-align: center;
+            padding: 5px;
             font-family: var(--fonte);
         }
         body {
-            background-color: var(--corbody);
+            background-color: rgb(163, 171, 179);
         }
         table {
             font-family: var(--fonte);
@@ -30,14 +31,14 @@
             margin: auto;
         }
         thead > tr > th {
-            border: 1px solid white;
+            border: 3px solid var(--corborder);
             padding: 20px;
         }
         thead > tr:nth-child(1n), tr:nth-child(5n), tr:nth-child(8n) { /*preenche cada linha individualmente*/
-            background-color: #F28D8D;
+            background-color: var(--corhead);
         }
         th, td {
-            border: 1px solid white;
+            border: 3px solid var(--corborder);
             padding: 20px;
             text-align: center;
         }
@@ -110,11 +111,10 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <td colspan="4" scope="row">Média de Humanas</td>
+                <td colspan="4" scope="row" class="left">Média de Humanas</td>
                 <td>0.0</td>
             </tr>
         </tbody>
-
     </table>
     
 </body>
