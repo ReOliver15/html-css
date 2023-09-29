@@ -7,21 +7,19 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" method="POST"> <!--Metodo post para dados sensiveis, tipo senha etc...-->
+    <form action="cadastro.php" method="POST" autocomplete="on"> <!--Metodo post para dados sensiveis, tipo senha etc...-->
         <p>
             <label for="iuser">Usuário: </label>
-            <input type="text" name="user" id="iuser">
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="15" placeholder="Nome de usuário" autocomplete="username">
         </p>
         <p>
             <label for="isenha">Senha: </label>
-            <input type="password" name="senha" id="isenha">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="10" placeholder="Senha" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="reset" value="Limpar"> <!--novo botão -->
         </p>
-
-
     </form>
 </body>
 </html>
