@@ -1,0 +1,63 @@
+* {
+    margin:0;
+}
+
+.container {
+    display: flex; /* container flex */
+    flex-direction: row; /*direção eixo principal*/
+    justify-content: center;
+    align-items: center; /*no caso o eixo perpendicular vertical*/
+    flex-wrap: nowrap; /*para quebrar de linha*/
+    align-content: center;
+    row-gap: 10px; /*espaço entre linhas*/
+    column-gap: 30px; /*espaço entre colunas*/
+
+    /* estilização do container */
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+    /* estilização */
+.bloco-1 {
+    order: 0; /*aceita numero negativo*/
+    /*flex-grow: 0; NÃO aceita numero neg
+    flex-shrink: 1; encolher o elemento
+    flex-basis: auto; */
+    flex: 0 1 auto; /*shorthand*/
+    align-self: flex-start;
+    background-color: #b2cdf1;
+    height: 150px;
+    width: 150px; /*largura do bloco*/
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+    /* estilização */
+.bloco-2  {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: #bfd8cb;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+    /* estilização */
+.bloco-3 {
+    order: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: #ff9999;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
